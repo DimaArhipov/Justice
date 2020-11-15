@@ -1,0 +1,10 @@
+@startuml
+title saveDish(dish:Dish) \n
+start
+if (getDishById(dish.getId())!=null) then (true)
+  :UPDATE dishes SET (...)=(...) WHERE id=dish.getId();
+else (false)
+  :INSERT INTO dishes VALUES(...);
+endif
+stop
+@enduml

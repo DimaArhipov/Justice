@@ -1,0 +1,10 @@
+@startuml
+title saveCategory(category:Category) \n
+start
+if (getCategoryById(category.getId())!=null) then (true)
+  :UPDATE categories SET (...)=(...) WHERE id=category.getId();
+else (false)
+  :INSERT INTO categories VALUES(...);
+endif
+stop
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+title getAllDishes() \n
+start
+:SELECT * FROM dishes ORDER BY category, name;
+stop
+@enduml

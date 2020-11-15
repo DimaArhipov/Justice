@@ -1,0 +1,6 @@
+@startuml
+title getAllCategoryes() \n
+start
+:SELECT * FROM categories ORDER BY name;
+stop
+@enduml

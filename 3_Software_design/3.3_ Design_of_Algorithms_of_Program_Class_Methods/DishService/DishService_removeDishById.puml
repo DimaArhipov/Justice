@@ -1,0 +1,6 @@
+@startuml
+title removeDishById(id:int) \n
+start
+:DELETE FROM dishes WHERE ID = id;
+stop
+@enduml

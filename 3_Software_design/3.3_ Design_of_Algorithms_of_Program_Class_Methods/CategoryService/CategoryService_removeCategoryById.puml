@@ -1,0 +1,6 @@
+@startuml
+title removeCategoryById(id:int) \n
+start
+:DELETE FROM categories WHERE ID = id;
+stop
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+title getCategoryById(id:int) \n
+start
+  :SELECT FROM categories WHERE ID = id;
+stop
+@enduml
