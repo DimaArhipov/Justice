@@ -1,0 +1,6 @@
+@startuml
+title removeByOrderIdAndDishID(orderId:long, dishId:long) \n
+start
+:DELETE FROM orderDetails WHERE order_id = orderId AND dish_id = dishId;
+stop
+@enduml

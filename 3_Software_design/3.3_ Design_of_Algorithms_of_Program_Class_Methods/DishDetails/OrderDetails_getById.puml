@@ -1,0 +1,6 @@
+@startuml
+title getById(id:long) \n
+start
+  :SELECT FROM orderDetails WHERE ID = id;
+stop
+@enduml

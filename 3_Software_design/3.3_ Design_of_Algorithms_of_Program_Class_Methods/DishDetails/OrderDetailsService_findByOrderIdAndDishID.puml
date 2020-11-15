@@ -1,0 +1,6 @@
+@startuml
+title findByOrderIdAndDishID(orderId:long,dishId:long) \n
+start
+  :SELECT FROM dishDetails WHERE order_id = orderId AND dish_id = dishId;
+stop
+@enduml

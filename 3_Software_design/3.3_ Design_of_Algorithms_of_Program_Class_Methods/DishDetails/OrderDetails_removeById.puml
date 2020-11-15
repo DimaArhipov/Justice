@@ -1,0 +1,6 @@
+@startuml
+title removeByID(id:long) \n
+start
+:DELETE FROM orderDetails WHERE ID = id;
+stop
+@enduml

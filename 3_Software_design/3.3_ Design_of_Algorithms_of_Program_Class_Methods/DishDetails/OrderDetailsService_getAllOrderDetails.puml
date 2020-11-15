@@ -1,0 +1,6 @@
+@startuml
+title getAllOrderDetails() \n
+start
+:SELECT * FROM orderDetails ORDER BY orderId;
+stop
+@enduml
