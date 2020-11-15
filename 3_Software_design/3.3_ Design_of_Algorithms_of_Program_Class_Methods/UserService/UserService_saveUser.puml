@@ -1,0 +1,18 @@
+@startuml
+title saveDishDetail(dishDetail:DishDetail) \n
+start
+:DishDetail det = findByOrderIdAndDishId(detail.getOrderId(), detail.getDishId());
+if (det!=null) then (true)
+  :det.setQuantity(det.getQuantity()+detail.getQuantity());
+  :repository.save(det)
+	note right
+    :UPDATE dishDetails SET (...)=(...) WHERE ID = det.getId();
+	end note
+else (false)
+  :repository.save(details)
+  note right
+  :INSERT INTO dishDetails VALUES(...);
+  end note
+endif
+stop
+@enduml

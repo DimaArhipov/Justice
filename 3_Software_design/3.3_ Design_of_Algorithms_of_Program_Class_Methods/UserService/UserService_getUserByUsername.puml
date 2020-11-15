@@ -1,0 +1,6 @@
+@startuml
+title getUserByUsername(usrname:String) \n
+start
+  :SELECT FROM users WHERE username = usrname;
+stop
+@enduml

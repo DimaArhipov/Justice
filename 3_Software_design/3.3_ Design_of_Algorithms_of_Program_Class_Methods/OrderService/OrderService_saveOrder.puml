@@ -1,0 +1,10 @@
+@startuml
+title saveOrder(order:Order) \n
+start
+if (getOrderById(order.getId())!=null) then (true)
+  :UPDATE orders SET (...)=(...) WHERE id=orderZ.getId();
+else (false)
+  :INSERT INTO orders VALUES(...);
+endif
+stop
+@enduml

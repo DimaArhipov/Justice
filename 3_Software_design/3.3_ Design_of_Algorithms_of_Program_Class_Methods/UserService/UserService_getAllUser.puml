@@ -1,0 +1,6 @@
+@startuml
+title getAllUsers() \n
+start
+:SELECT * FROM users ORDER BY position, firstName, name;
+stop
+@enduml

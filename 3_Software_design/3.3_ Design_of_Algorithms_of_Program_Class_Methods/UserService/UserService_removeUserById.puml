@@ -1,0 +1,6 @@
+@startuml
+title removeByID(id:int) \n
+start
+:DELETE FROM users WHERE user_id = id;
+stop
+@enduml

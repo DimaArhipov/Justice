@@ -1,0 +1,6 @@
+@startuml
+title getAllOrderes() \n
+start
+:SELECT * FROM orders ORDER BY tableNum, dateOrdered;
+stop
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+title removeOrderById(id:int) \n
+start
+:DELETE FROM orders WHERE ID = id;
+stop
+@enduml

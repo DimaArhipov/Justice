@@ -1,0 +1,6 @@
+@startuml
+title getUserById(id:int) \n
+start
+  :SELECT FROM users WHERE ID = id;
+stop
+@enduml
